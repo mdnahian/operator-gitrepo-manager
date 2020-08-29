@@ -2,9 +2,9 @@ FROM python:3
 
 WORKDIR /usr/src/loader
 
-COPY requirements.txt ./
+COPY ./loader/build/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ../app .
+COPY ./loader/app .
 
-CMD [ "python", "start_loader.py" ]
+CMD [ "python", "./app/start_loader.py" ]
