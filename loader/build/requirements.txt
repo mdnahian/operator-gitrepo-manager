@@ -1,2 +1,4 @@
 grpcio==1.31.0
-grpcio-tools==1.31.0
+GitPython==3.1.7
+PyYAML==5.3.1
+protobuf==3.13.0

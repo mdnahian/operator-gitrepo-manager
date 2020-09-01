@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./loader/app .
 
+EXPOSE 50051
+
 CMD [ "python", "./app/start_loader.py" ]
